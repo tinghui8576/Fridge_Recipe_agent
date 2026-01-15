@@ -4,7 +4,7 @@ import operator
 
 class CookingState(TypedDict):
     messages: Annotated[list[AnyMessage], operator.add]
-    weather: str | None
+    city: str | None
     dietary_restrictions: list[str]
     fridge_items: list[str]
     spices: list[str]
